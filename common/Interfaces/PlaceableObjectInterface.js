@@ -11,8 +11,6 @@ import InterfaceImplementation, {
 function PlaceableObjectInterface(object, interfaceImplementation) {
   const implementation = new InterfaceImplementation(this, object, interfaceImplementation);
 
-  this.getType = () => implementation.callMethod('getType');
-
   this.setPosition = position => implementation.callMethod('setPosition', position);
   /**
    * @return {CommonVector2}
